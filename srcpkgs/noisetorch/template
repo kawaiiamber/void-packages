@@ -1,0 +1,13 @@
+# Template file for 'noisetorch'
+pkgname=noisetorch
+version=0.9.0
+revision=1
+wrksrc="NoiseTorch-${version}"
+build_style=go
+go_import_path="github.com/lawl/NoiseTorch"
+short_desc="Real-time microphone noise suppression on Linux"
+maintainer="KawaiiAmber <japaneselearning101@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/lawl/NoiseTorch"
+distfiles="https://github.com/lawl/NoiseTorch/archive/${version}.tar.gz"
+checksum=afe01a969e1c016134cbe4f481c2af110f091f29fbde3a1d44095d9be37d3fd2
