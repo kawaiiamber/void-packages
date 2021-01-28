@@ -1,0 +1,18 @@
+# Template file for 'trebleshot-desktop'
+pkgname=trebleshot-desktop
+version=0.1.0
+_version=${version}-alpha2
+revision=1
+wrksrc=desktop-${_version}
+build_style=cmake
+makedepends="qt5-devel kdnssd-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds"
+short_desc="Open-Source file sharing software for Linux"
+maintainer="KawaiiAmber <japaneselearning101@gmail.com>"
+license="GPL-2.0-only"
+homepage="https://github.com/trebleshot/desktop"
+distfiles="${homepage}/archive/${_version}.tar.gz"
+checksum=8343658d59f183078ab0a706689c1d8362e7ea924f3f0ee4a981c5cc6f55aaa7
+
+if [ "${CROSS_BUILD}" ]; then
+	hostmakedepends="qt5-qmake qt5-host-tools"
+fi
